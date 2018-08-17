@@ -1,0 +1,46 @@
+//
+//  timeManageToList.pch
+//  timeManageToList
+//
+//  Created by mac on 2017/8/29.
+//  Copyright © 2017年 com.xz.timeManageToList. All rights reserved.
+//
+
+#ifndef timeManageToList_pch
+#define timeManageToList_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UtilsMacro.h"
+#import "NSDictionary+YYAdd.h"
+#import "UIView+Frame.h"
+
+#import "Networking.h"
+#import "userModel.h"
+#import "NSDictionary+Safe.h"
+#import "UIViewController+Station.h"
+#import "HttpConnection.h"
+#import "xzUtils.h"
+#import "Task.h"
+
+
+#define URL_CIBA @"http://open.iciba.com/dsapi/"
+#define URL_BINGIMAGE @"http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1"
+
+#define URL_BING @"https://cn.bing.com"
+
+#define secretKey @"fe&gf2hg34h3fr34yryr464f@$5ds!fs"
+#define ContentSize @"state"
+#define ContentOffset @"contentOffset"
+#define ContentOffSize @"contentSize"
+///
+///初始化当前时间
+static NSDate *nowDate;
+///调整间隔时间
+static int timeInterval;
+///工作时间
+static int workTime;
+
+
+#endif /* timeManageToList_pch */
